@@ -2,9 +2,7 @@
 
 <div align="center">
 
-![SemiRestoreNet](assets/training_curves.png)
-
-**Best PSNR: 25.13 dB &nbsp;|&nbsp; Best SSIM: 0.7643 &nbsp;|&nbsp; 400/400 Test Images Delivered**
+![Dataset Samples](assets/dataset_samples.png)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.13-ee4c2c.svg)](https://pytorch.org)
@@ -68,19 +66,20 @@ NoisyLR (1×128×128)
 
 ---
 
+## Dataset Used for Training
+
+The model was trained on the KLA Hackathon dataset consisting of paired semiconductor SEM images:
+- **NoisyLR**: 128×128 images with speckle/Gaussian noise and reduced resolution.
+- **GT (Ground Truth)**: 256×256 clean images.
+
+![Dataset Samples](assets/dataset_samples.png)
+
+*Top: NoisyLR Inputs (128×128) | Bottom: Ground Truth Targets (256×256)*
+
+---
+
 ## Results
 
-### Training Curves (100 Epochs, Google Colab A100)
-
-![Training Curves](assets/training_curves.png)
-
-| Metric | Value |
-|--------|-------|
-| **Best Val PSNR** | **25.13 dB** (epoch 88) |
-| **Best Val SSIM** | **0.7643** |
-| Training Time | 70.2 minutes on A100 GPU |
-| Parameters | 5,178,116 (~5.2M) |
-| Inference Speed | ~50 ms / image on CPU |
 
 ### Sample Predictions — Noisy LR Input → Our Prediction → Ground Truth
 
@@ -145,9 +144,10 @@ siliconvision-kla-2026/
 │   └── SemiRestoreNet_Colab.ipynb   # Full reproducible Colab notebook
 │
 ├── assets/
-│   ├── training_curves.png          # Loss / PSNR / SSIM over 100 epochs
+│   ├── dataset_samples.png          # Sample dataset pairs
 │   └── predictions_grid.png         # Before / After / GT comparison
 │
+├── best_model.pth               # Pre-trained model weights (59MB)
 └── requirements.txt
 ```
 
