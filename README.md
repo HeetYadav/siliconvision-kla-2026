@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Team SiliconVision — Nirma University**  
-Bhavinkumar Umatiya &nbsp;|&nbsp; Heet Yadav
+Heet Yadav &nbsp;|&nbsp; Bhavin Umatiya &nbsp;|&nbsp; Het Patel &nbsp;|&nbsp; Harsh Patel
 
 </div>
 
@@ -211,6 +211,6 @@ Open [`notebook/SemiRestoreNet_Colab.ipynb`](notebook/SemiRestoreNet_Colab.ipynb
 <div align="center">
 
 **SEMICON India Hackathon 2026 &nbsp;|&nbsp; Track 1: KLA Image Restoration**  
-Team SiliconVision — Nirma University
+Heet Yadav &nbsp;|&nbsp; Bhavin Umatiya &nbsp;|&nbsp; Het Patel &nbsp;|&nbsp; Harsh Patel — Nirma University
 
 </div>
