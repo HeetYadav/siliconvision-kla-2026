@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Model checkpoints (too large for git — share via Drive)
+*.pth
+*.pt
+*.onnx
+
+# Predictions (submitted separately as zip)
+predictions/
+predictions.zip
+
+# Logs
+*.log
+train_log.json
+results_per_image.csv
+eval_summary.json
+
+# Dataset (not distributed)
+Dataset/
+
+# Misc
+.DS_Store
+*.tmp
+colab_content.txt
+colab_top.txt
+dataset_inspection.png
