@@ -43,7 +43,7 @@ from metrics import compute_psnr, compute_ssim, compute_lpips
 # ------------------------------------------------------------------
 
 DEFAULT_MODEL_PATH = str(
-    Path(__file__).parent / "best_model.pth"
+    Path(__file__).parent.parent / "best_model.pth"
 )
 
 # ------------------------------------------------------------------
