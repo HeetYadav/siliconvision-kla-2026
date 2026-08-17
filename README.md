@@ -211,6 +211,8 @@ Open [`notebook/SemiRestoreNet_Colab.ipynb`](notebook/SemiRestoreNet_Colab.ipynb
 3. Shi et al. (2016). *Real-Time Single Image SR Using an Efficient Sub-Pixel CNN.* CVPR. [arxiv:1609.05158](https://arxiv.org/abs/1609.05158)
 4. Johnson et al. (2016). *Perceptual Losses for Real-Time Style Transfer and SR.* ECCV. [arxiv:1603.08155](https://arxiv.org/abs/1603.08155)
 5. Wang et al. (2004). *SSIM: Image Quality Assessment.* IEEE TIP.
+6.  Training Dataset: SiliconVision SEM Noisy-Clean Image Pairs (3,200 train / 320 val / 400 test). Available at: 
+   https://drive.google.com/drive/folders/1VKiFW-kDk9-q5XRPu3nrl08OM94EwzV6
 
 ---
 
