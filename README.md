@@ -147,7 +147,7 @@ siliconvision-kla-2026/
 │   ├── dataset_samples.png          # Sample dataset pairs
 │   └── predictions_grid.png         # Before / After / GT comparison
 │
-├── best_model.pth               # Pre-trained model weights (59MB)
+├── models/`n│   └── best_model.pth           # Pre-trained model weights (59MB)`n├── run.py                       # Main inference script
 └── requirements.txt
 ```
 

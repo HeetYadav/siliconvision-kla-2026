@@ -6,8 +6,8 @@ __pycache__/
 *.egg-info/
 
 # Model checkpoints (too large for git — share via Drive)
-# *.pth (Removed to allow best_model.pth)
-*.pt
+*.pt`n!models/best_model.pthh
+*.pt`n!models/best_model.pth
 *.onnx
 
 # Predictions (submitted separately as zip)
