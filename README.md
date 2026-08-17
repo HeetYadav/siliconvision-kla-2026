@@ -155,6 +155,11 @@ siliconvision-kla-2026/
 
 ## Quick Start
 
+> [!IMPORTANT]
+> **Dataset Setup**
+> The KLA Hackathon dataset is not included in this repository due to size limits. You must download it yourself.
+> When running the scripts below, you must replace `/path/to/Dataset/...` with the actual path to your dataset on your local machine. Alternatively, you can place the dataset in a folder named `Dataset` inside this repository and omit the path arguments entirely.
+
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
@@ -169,13 +174,14 @@ python src/train.py \
   --train_gt_dir    /path/to/Dataset/train/GT
 ```
 
-### 3. Evaluate (submission format)
+### 3. Evaluate (Submission Format)
+To run inference on new blind test images:
 ```bash
 python src/evaluate.py \
   --input_dir  /path/to/Dataset/NoisyLR \
   --output_dir ./predictions \
   --model_path ./best_model.pth \
-  --gt_dir     /path/to/Dataset/train/GT   # optional, for PSNR/SSIM
+  --gt_dir     /path/to/Dataset/train/GT   # Optional: Include to automatically compute PSNR/SSIM
 ```
 
 ### 4. Run in Colab (recommended)
