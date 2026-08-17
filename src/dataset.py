@@ -162,7 +162,7 @@ class _AugmentedSubset(Dataset):
 if __name__ == "__main__":
     import sys
     # Quick sanity check
-    DATASET_ROOT = r"c:\Users\heety\Documents\SemiconHackathon\Dataset"
+    DATASET_ROOT = "./Dataset"
     noisy_dir = os.path.join(DATASET_ROOT, "train", "NoisyLR")
     gt_dir = os.path.join(DATASET_ROOT, "train", "GT")
 

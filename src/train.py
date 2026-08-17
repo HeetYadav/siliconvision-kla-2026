@@ -39,8 +39,8 @@ from metrics import compute_psnr, compute_ssim
 # Configuration
 # ------------------------------------------------------------------
 
-DATASET_ROOT = r"c:\Users\heety\Documents\SemiconHackathon\Dataset"
-WORK_DIR = r"c:\Users\heety\Documents\SemiconHackathon\work_stage1"
+DATASET_ROOT = "./Dataset"
+WORK_DIR = "./work_dir"
 
 DEFAULT_CONFIG = {
     "train_noisy_dir": os.path.join(DATASET_ROOT, "train", "NoisyLR"),
