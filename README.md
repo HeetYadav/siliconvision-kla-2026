@@ -23,7 +23,7 @@ KLA inspection tools capture semiconductor SEM images degraded by two compoundin
 - **Noise**: Speckle + Gaussian noise from the acquisition process
 - **Resolution loss**: Images are 128×128, but defect analysis requires 256×256
 
-These aren't separate problems — they compound. A standard denoiser followed by an upsampler accumulates error at each stage and doubles inference latency.
+These aren't separate problems they compound. A standard denoiser followed by an upsampler accumulates error at each stage and doubles inference latency.
 
 ---
 
@@ -200,7 +200,6 @@ Open [`notebook/SemiRestoreNet_Colab.ipynb`](notebook/SemiRestoreNet_Colab.ipynb
 | LR Schedule | Cosine annealing with 5-epoch linear warmup |
 | Mixed Precision | AMP (fp16) on GPU |
 | Best epoch | 88 / 100 |
-| Hardware | Google Colab A100 GPU |
 
 ---
 
