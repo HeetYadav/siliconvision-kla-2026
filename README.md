@@ -132,22 +132,28 @@ PyTorch checkpoint (.pth)
 ```
 siliconvision-kla-2026/
 │
+├── scripts/
+│   └── augment_dataset.py # Offline synthetic data augmentation script
+│
 ├── src/
 │   ├── dataset.py       # Data loader — per-sample normalization, augmentation
 │   ├── model.py         # SemiRestoreNet architecture
 │   ├── losses.py        # Combined L1 + SSIM + Perceptual loss
 │   ├── metrics.py       # PSNR, SSIM, LPIPS evaluation
+│   ├── degradation.py   # Synthetic speckle + Gaussian degradation logic
 │   ├── train.py         # Training loop — AMP, cosine LR, checkpointing
 │   └── evaluate.py      # Standalone evaluation script (submission format)
 │
 ├── notebook/
-│   └── SemiRestoreNet_Colab.ipynb   # Full reproducible Colab notebook
+│   └── KLA_Train_Colab_Augumented.ipynb   # Full reproducible Colab notebook
 │
 ├── assets/
 │   ├── dataset_samples.png          # Sample dataset pairs
 │   └── predictions_grid.png         # Before / After / GT comparison
 │
-├── models/`n│   └── best_model.pth           # Pre-trained model weights (59MB)`n├── run.py                       # Main inference script
+├── models/
+│   └── best_model.pth           # Pre-trained model weights (59MB)
+├── run.py                       # Main inference script
 └── requirements.txt
 ```
 
@@ -181,7 +187,7 @@ python run.py --input_dir /path/to/test/NoisyLR --output_dir /path/to/save/outpu
 ```
 
 ### 4. Run in Colab (recommended)
-Open [`notebook/SemiRestoreNet_Colab.ipynb`](notebook/SemiRestoreNet_Colab.ipynb) — everything runs in order from data loading to ONNX export.
+Open [`notebook/KLA_Train_Colab_Augumented.ipynb`](notebook/KLA_Train_Colab_Augumented.ipynb) — everything runs in order from data loading to ONNX export.
 
 ---
 
@@ -195,7 +201,8 @@ Open [`notebook/SemiRestoreNet_Colab.ipynb`](notebook/SemiRestoreNet_Colab.ipynb
 | Optimizer | AdamW, lr=3e-4, weight_decay=1e-4 |
 | LR Schedule | Cosine annealing with 5-epoch linear warmup |
 | Mixed Precision | AMP (fp16) on GPU |
-| Best epoch | 88 / 100 |
+| Best epoch | 126 / 150 |
+| Max Validation PSNR | **26.96 dB** |
 
 ---
 
