@@ -177,11 +177,7 @@ python src/train.py \
 ### 3. Evaluate (Submission Format)
 To run inference on new blind test images:
 ```bash
-python src/evaluate.py \
-  --input_dir  /path/to/Dataset/NoisyLR \
-  --output_dir ./predictions \
-  --model_path ./best_model.pth \
-  --gt_dir     /path/to/Dataset/train/GT   # Optional: Include to automatically compute PSNR/SSIM
+python run.py --input_dir /path/to/test/NoisyLR --output_dir /path/to/save/outputs
 ```
 
 ### 4. Run in Colab (recommended)
